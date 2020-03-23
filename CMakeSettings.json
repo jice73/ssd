@@ -1,0 +1,30 @@
+﻿{
+    "configurations": [
+        {
+            "name": "x64-Debug",
+            "generator": "Ninja",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "buildRoot": "${projectDir}\\build-x64-d",
+            "installRoot": "${projectDir}\\install-x64-d",
+            "cmakeCommandArgs": "-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON",
+            "buildCommandArgs": "-v",
+            "ctestCommandArgs": "",
+            "intelliSenseMode": "windows-msvc-x64",
+            "variables": []
+        },
+        {
+            "name": "x64-Release",
+            "generator": "Ninja",
+            "configurationType": "Release",
+            "buildRoot": "${projectDir}\\build-x64",
+            "installRoot": "",
+            "cmakeCommandArgs": "-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON -DCMAKE_INSTALL_PREFIX=C:\\",
+            "buildCommandArgs": "-v",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "intelliSenseMode": "windows-msvc-x64",
+            "variables": []
+        }
+    ]
+}
